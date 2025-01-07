@@ -8,5 +8,5 @@ This is a creational design pattern which provides an interface for creating obj
 
 Artifacts:
 
-- [UML diagram](drawio/CreationalDesignPatterns/FactoryMethod.drawio)
+- [draw.io](drawio/CreationalDesignPatterns/FactoryMethod.drawio)
 - [Code](src/main/java/com/designpatterns/FactoryMethod.java)
