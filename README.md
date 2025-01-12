@@ -9,4 +9,4 @@ This is a creational design pattern which provides an interface for creating obj
 Artifacts:
 
 - [draw.io](drawio/CreationalDesignPatterns/FactoryMethod.drawio)
-- [Code](src/main/java/com/designpatterns/FactoryMethod.java)
+- [Code](src/main/java/com/factory_method/FactoryMethod.java)

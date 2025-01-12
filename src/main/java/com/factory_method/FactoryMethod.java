@@ -1,8 +1,8 @@
-package com.designpatterns;
+package com.factory_method;
 
 
 interface Product {
-    public void sayHello();
+    void sayHello();
 }
 
 class ProductA implements Product {
