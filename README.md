@@ -70,3 +70,34 @@ feature._
 
 - [Drawio](drawio/StructuralDesignPatterns/composite.drawio.svg)
 - [Code]()
+
+### Decorator
+
+This is just like middlewares. We try to chain objects along with extra behaviours.
+
+Decorator is a structural design pattern that lets you attach new behaviours(in pre / pos processing terms, no new
+methods) to objects by placing these objects inside special wrapper objects that contain the new behaviours. The wrapper
+objects also makes sure that wrapee's behaviours too get executed.
+
+**Decorators are super useful when we want to add new functionalities to a final class**
+
+#### Real world example
+
+Notifier: There can be several types of notifiers. Each client can have custom notification requirements.
+We can use decorator design pattern here by creating a stack out of required wrappers.
+
+```java
+stack = new Notifier();
+if (facebookNotifier) {
+    stack = new FacebookNotifier(stack);
+}
+if (slackNotifier) {
+    stack = new SlackNotifier(stack);    
+}
+
+stack.notify();
+```
+#### Artifacts
+
+- [Draw io](drawio/StructuralDesignPatterns/decorator.drawio.svg)
+- [Code](src/main/java/com/decorator/Decorator.java)
