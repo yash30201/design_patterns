@@ -56,3 +56,17 @@ Device + Remote
 
 - [Draw IO](drawio/StructuralDesignPatterns/bridge.drawio.svg)
 - [Code](src/main/java/com/bridge/Bridge.java)
+
+### Composite
+
+Composite is a structural design pattern that lets you compose objects into tree structures and then work with the
+structures as if they were individual objects.
+
+> _I used this in google-cloud-php/Datastore's ([PR](https://github.com/googleapis/google-cloud-php/pull/6557))  
+and google-cloud-php/Firestore's ([PR](https://github.com/googleapis/google-cloud-php/pull/6817)) Sum/Avg Aggregation
+feature._
+
+#### Artifacts
+
+- [Drawio](drawio/StructuralDesignPatterns/composite.drawio.svg)
+- [Code]()
