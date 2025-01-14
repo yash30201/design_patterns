@@ -23,7 +23,8 @@ This is how 1-way adapter works:
 - Using this interface, `objectA` can safely call the adapter methods.
 - Adapter also gets an `objectB` of the other `interfaceB` (via constructor or via calling method).
   - `interfaceA` and `interfaceB` are not compatible.
-- Upon receiving a call from `interfaceA`, adapter formats the request as per the `interfaceB` and passes the call to `objectB`.
+- Upon receiving a call from `interfaceA`, adapter formats the request as per the `interfaceB` and passes the call to 
+  `objectB`.
 
 #### Real world example
 
@@ -33,3 +34,25 @@ Travelling US to Europe, but they have different socket standards.
 
 - [draw.io](drawio/StructuralDesignPatterns/Adapter.drawio.svg)
 - [code](src/main/java/com/adapter/Adapter.java)
+
+### Bridge
+
+Bridge is a structural design pattern that lets you split a class or a set of closely related classes into two separate
+hierarchies / dimensions, namely abstraction and implementation, which can be developed independently.
+
+To apply bridge patter:
+
+- You extract one of the dimensions into a separate class hierarchy, so that the original class can reference the new
+  dimensional object.
+- The new class would be responsible for managing all its state and behaviours.
+
+> You can think of you this a separation of a monolith into GUI + API.
+
+#### Real world example
+
+Device + Remote
+
+#### Artifacts
+
+- [Draw IO](drawio/StructuralDesignPatterns/bridge.drawio.svg)
+- [Code](src/main/java/com/bridge/Bridge.java)
